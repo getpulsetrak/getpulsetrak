@@ -25,10 +25,10 @@
         <a class="btn py-2 d-none d-md-inline-block text-white brand-link" href="#about">
           ABOUT
         </a>
-        <a class="py-2 d-none d-md-inline-block text-white brand-link" href="https://drive.google.com/open?id=11nAfEvMfpeCA5WwM5SsIKu3pD7YYYgfQ" target="_blank">
+        <a class="py-2 d-none d-md-inline-block text-white brand-link" href="#signup">
           DOWNLOAD
         </a>
-        <a class="py-2 d-none d-md-inline-block text-white brand-link" href="https://patreon.com" target="_blank">
+        <a class="py-2 d-none d-md-inline-block text-white brand-link" href="#support">
           SUPPORT
         </a>
         </div>
@@ -41,39 +41,39 @@
       <div class="mr-md-3 pt-3 px-3 text-center overflow-hidden w-100" style="margin-left:0px!important;margin-right:0px!important;">
         <div class="my-3 py-4 no-bottom">
             <div class="row">
-              <div class="col-6 col-md" id="img-holder">
-              </div>
-              <div class="col-6 col-md my-3 py-3">
+              <div class="col-md-6 my-3 py-3">
                 <h4>A new way to record your favorite workouts</h4>
                 <p class="lead font-weight-normal my-3 py-3">
                   Link your Strava account. Connect your BlueTooth heart rate monitor.
                   Load up your favorite YouTube workout video and follow along!
                 </p>
                 <div class="my-3 py-3">
-                <a class="btn btn-pulsetrak" href="https://drive.google.com/open?id=11nAfEvMfpeCA5WwM5SsIKu3pD7YYYgfQ" target="_blank">Get PulseTrak for free!</a>
+                <a class="btn btn-pulsetrak" href="#signup">Get PulseTrak for free!</a>
                 <p class="px-5 sub-text my-3 py-3">*ONLY available on Chrome browsers on desktop or laptop computers.</p>
                 </div>
+              </div>
+              <div class="col-md-6" id="img-holder">
               </div>
             </div>
         </div>
       </div>
     </div>
 
-    <div id="get-started" class="container-fluid viewer">
+    <div id="get-started" class="container-fluid viewer bg-pulsetrak">
       <div class="mr-md-3 pt-3 px-3 text-center overflow-hidden w-100" style="margin-left:0px!important;margin-right:0px!important;">
       <div class="my-3 py-3">
         <h2 class="display-5">How it works.</h2>
         <p class="lead">
-          <a class="btn btn-warning" href="https://drive.google.com/open?id=11nAfEvMfpeCA5WwM5SsIKu3pD7YYYgfQ" target="_blank">Install PulseTrak</a>
+          <a class="btn btn-warning" href="#signup">Install PulseTrak</a>
         </p>
         <div class="container py-3">
           <div class="row">
-            <div class="col-6 col-md">
+            <div class="col-md-6 py-3">
               <h4>Install PulseTrak</h4>
                 Click the "Install PulseTrak" button on this page.
                 Once you are redirected to the Chrome Web Store, click "Add to Chrome" to finish installing PulseTrak.
             </div>
-            <div class="col-6 col-md">
+            <div class="col-md-6 py-3">
               <h4>Connect your Strava Account</h4>
               On the Setup Page, Click the Strava button to link your account.
               This will redirect you to a Strava authorization page.
@@ -81,29 +81,59 @@
           </div>
           <br>
           <div class="row">
-            <div class="col-6 col-md">
+            <div class="col-md-6 py-3">
               <h4>Navigate to your favorite YouTube Workout Video</h4>
               The PulseTrak button will load under the video next to the "Save" button
             </div>
-            <div class="col-6 col-md">
+            <div class="col-md-6 py-3">
               <h4>Connect BlueTooth, Click Record, Start Working out!</h4>
                 If you have a BlueTooth Heart Rate Monitor, Click the "Connect BlueTooth" button to pair it.
                 Once ready, click "Record Workout", click "Play" on the video and Workout!
             </div>
           </div>
           <div class="row">
-            <div class="w-50">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 py-3">
               <h4>Complete Workout</h4>
                 When the video ends, your workout will auto-sync to strava.
                 Done early? Click the "Complete Workout" button to manually sync!
             </div>
+            <div class="col-md-3"></div>
           </div>
         </div>
       </div>
       </div>
     </div>
 
-    <div id="strava" class="container-fluid viewer-light">
+
+        <div id="signup" class="container-fluid viewer-light">
+          <div class=" mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden w-100">
+            <div id="signup-info" class="row my-3 p-3">
+              <div class="col-lg-3"></div>
+              <div class="col-lg-6">
+                <h1>Sign Up for Early Access</h1>
+                <h5 class="my-3 py-3">
+                  We are currently accepting requests for our Early Access Program to help us test out the PulseTrak Extension.
+                  <br>
+                  Add your email and submit the below form to sign up!
+                </h5>
+                <form class="my-3 py-3" id="signup-form" action="https://formsubmit.co/info@getpulsetrak.com" target="_blank" method="POST">
+                  <input type="hidden" name="_next" value="https://getpulsetrak.com#get-started">
+                  <input type="text" name="_honey" style="display:none">
+                  <input type="hidden" name="_captcha" value="false">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="inputEmail" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+              <div class="col-lg-3"></div>
+            </div>
+          </div>
+        </div>
+
+
+    <div id="strava" class="container-fluid viewer">
       <div class=" mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden w-100">
         <div class="my-3 p-3">
           <h1>Connect to Strava</h1>
@@ -114,18 +144,19 @@
         </div>
       </div>
     </div>
-    <div id="info" class="container-fluid viewer text-center">
+
+    <div id="info" class="container-fluid viewer text-center bg-pulsetrak">
       <div class="py-5 no-bottom">
           <div class="row">
-            <div class="col-6 col-md my-3 py-3">
-              <h4>FAQS</h4>
+            <div class="col-md-3 my-3 py-3">
+              <h4 style="display:none;">FAQS</h4>
 
             </div>
-            <div class="col-6 col-md my-3 py-3">
-              <h4>Questions</h4>
-              <p>Send us an email:</p>
-              <div class="my-3 py-3">
-              <a class="btn btn-pulsetrak">info@getpulsetrak.com</a>
+            <div class="col-md-6 my-3 py-3">
+              <h2 class="my-3 py-3">Questions</h2>
+              <h5>Send us an email:</h5>
+              <div class="my-5 py-3">
+              <a class="btn-pulsetrak">info@getpulsetrak.com</a>
               </div>
             </div>
           </div>
@@ -135,5 +166,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="public/js/index.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165617512-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-165617512-1');
+    </script>
   </body>
 </html>

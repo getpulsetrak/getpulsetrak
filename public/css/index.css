@@ -84,7 +84,13 @@ html {
   color:white;
   font-weight:bold;
   letter-spacing:3px;
+  padding:15px 25px;
+  border-radius:50px;
 }
-#get-started{
+.bg-pulsetrak{
   background-color:#8d0000;
+}
+#signup-info{
+  font-weight:bold;
+  letter-spacing:2px;
 }
