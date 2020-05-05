@@ -1,0 +1,90 @@
+#main{
+  margin-top:-53px;
+  background-image: url(../assets/pulsetrak-main.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
+  height: 100vh;
+  position: relative;
+}
+#branding{
+  padding-left:20px;
+  font-weight: bolder;
+  color: #ec0808;
+  font-size: 30px;
+  letter-spacing: 7px;
+}
+#branding-container{
+  margin:0px;
+  max-width:100%;
+}
+.brand-link{
+  color: #ec0808!important;
+  font-weight: bold;
+  padding: 0px 20px;
+  letter-spacing:3px;
+}
+.viewer{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
+  min-height: 100vh;
+  position: relative;
+  box-shadow: inset 0 10rem 10rem rgba(0, 0, 0, .75);
+  color:white;
+}
+.viewer-light{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #e1e1e1;
+  min-height: 100vh;
+  position: relative;
+}
+
+/*SCROLLBAR*/
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ec0808;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+.strava{
+  background-color:#fc4c02;
+  color:white;
+}
+#img-holder{
+  background-image: url(../assets/yoga-main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:95vh;
+}
+.no-bottom{
+  margin-bottom:0px!important;
+  padding-bottom:0px!important;
+}
+.sub-text{
+  color:#b1b3b5;
+}
+.btn-pulsetrak{
+  background-color: #ec0808;
+  color:white;
+  font-weight:bold;
+  letter-spacing:3px;
+}
+#get-started{
+  background-color:#8d0000;
+}
