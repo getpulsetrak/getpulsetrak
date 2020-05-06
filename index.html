@@ -117,7 +117,7 @@
                   <br>
                   Add your email and submit the below form to sign up!
                 </h5>
-                <form class="my-3 py-3" id="signup-form" action="https://formsubmit.co/info@getpulsetrak.com" target="_blank" method="POST">
+                <form class="my-3 py-3" id="signup-form" action="https://formsubmit.co/info@getpulsetrak.com" method="POST">
                   <input type="hidden" name="_next" value="https://getpulsetrak.com#get-started">
                   <input type="text" name="_honey" style="display:none">
                   <input type="hidden" name="_captcha" value="false">
@@ -135,12 +135,18 @@
 
     <div id="strava" class="container-fluid viewer">
       <div class=" mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden w-100">
-        <div class="my-3 p-3">
+        <div id="strava-container" class="my-3 p-3">
           <h1>Connect to Strava</h1>
           <h5>Hit the Strava button to give access to upload your works</h5>
-        <div class="btn strava nav-btn w-50" type="button" id="connectStrava">
-        <i class="fab fa-strava fa-2x"></i>
-        </div>
+          <div class="btn strava nav-btn w-50" type="button" id="connectStrava">
+            <i class="fab fa-strava fa-2x"></i>
+          </div>
+          <div class="my-3 p-3">
+            <div id="stravaInfo" style="text-align:center;display:none;">
+               <img id="profileImage" src="img/main-image.jpg" style="border-radius:100px;height:140px;width:140px;" />
+                <h1 id="name"></h1>
+             </div>
+          </div>
         </div>
       </div>
     </div>
