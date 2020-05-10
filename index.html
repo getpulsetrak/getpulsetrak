@@ -39,12 +39,12 @@
 
     <div id="about" class="viewer">
       <div class="mr-md-3 pt-3 px-3 text-center overflow-hidden w-100" style="margin-left:0px!important;margin-right:0px!important;">
-        <div class="my-3 py-4 no-bottom">
+        <div class="my-5 py-5 no-bottom">
             <div class="row">
-              <div class="col-md-6 my-3 py-3">
+              <div class="col-md-6 my-3 py-3" style="padding-left:40px;">
                 <h4>A new way to record your favorite workouts</h4>
                 <p class="lead font-weight-normal my-3 py-3">
-                  Link your Strava account. Connect your BlueTooth heart rate monitor.
+                  Link your Strava account. Connect your Bluetooth heart rate monitor.
                   Load up your favorite YouTube workout video and follow along!
                 </p>
                 <div class="my-3 py-3">
@@ -52,7 +52,10 @@
                 <p class="px-5 sub-text my-3 py-3">*ONLY available on Chrome browsers on desktop or laptop computers.</p>
                 </div>
               </div>
-              <div class="col-md-6" id="img-holder">
+              <div class="col-md-6" id="img-holderz" >
+                <video id="video-holder" playsinline="" autoplay="" loop="" muted="" width="90%">
+                  <source src="./public/assets/main-demo.mp4" type="video/mp4">
+                 </video>
               </div>
             </div>
         </div>
@@ -86,8 +89,8 @@
               The PulseTrak button will load under the video next to the "Save" button
             </div>
             <div class="col-md-6 py-3">
-              <h4>Connect BlueTooth, Click Record, Start Working out!</h4>
-                If you have a BlueTooth Heart Rate Monitor, Click the "Connect BlueTooth" button to pair it.
+              <h4>Connect Bluetooth, Click Record, Start Working out!</h4>
+                If you have a Bluetooth Heart Rate Monitor, Click the "Connect Bluetooth" button to pair it.
                 Once ready, click "Record Workout", click "Play" on the video and Workout!
             </div>
           </div>
@@ -135,7 +138,7 @@
 
     <div id="strava" class="container-fluid viewer">
       <div class=" mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden w-100">
-        <div id="strava-container" class="my-3 p-3">
+        <div id="strava-container" class="my-3 p-3" style="display:none">
           <h1>Connect to Strava</h1>
           <h5>Hit the Strava button to give access to upload your works</h5>
           <div class="btn strava nav-btn w-50" type="button" id="connectStrava">
@@ -143,8 +146,17 @@
           </div>
           <div class="my-3 p-3">
             <div id="stravaInfo" style="text-align:center;display:none;">
-               <img id="profileImage" src="img/main-image.jpg" style="border-radius:100px;height:140px;width:140px;" />
+              <h2>Thanks for connecting!</h2>
+               <img id="profileImage" src="" style="border-radius:100px;height:140px;width:140px;" />
                 <h1 id="name"></h1>
+             </div>
+             <div id="stravaDenied" style="text-align:center;display:none;">
+               <h2>Sorry we couldn't connect!</h2>
+               <h2>Send us an email and let's discuss any questions!</h2>
+             </div>
+             <div id="stravaPermission" style="text-align:center;display:none;">
+               <h2>Not enough permissions!</h2>
+               <h2>Oops! We need activity:write access to upload workouts to Strava!</h2>
              </div>
           </div>
         </div>
@@ -156,7 +168,6 @@
           <div class="row">
             <div class="col-md-3 my-3 py-3">
               <h4 style="display:none;">FAQS</h4>
-
             </div>
             <div class="col-md-6 my-3 py-3">
               <h2 class="my-3 py-3">Questions</h2>
